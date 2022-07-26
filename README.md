@@ -104,13 +104,13 @@ patch -p1 < uksm-5.17.patch
 ```
 
 
-```
+
 change .config 
 
 ```
 scripts/config --disable SYSTEM_TRUSTED_KEYS
 scripts/config --disable SYSTEM_REVOCATION_KEYS
-```
+
 
 with the above we don't need it: I left it here for awareness only :
 ----------------------------------------------------------
@@ -120,8 +120,9 @@ from
 CONFIG_SYSTEM_TRUSTED_KEYS="debian/canonical-certs.pem" 
 to
 CONFIG_SYSTEM_TRUSTED_KEYS=""
-```
 ----------------------------------------------------------
+
+```
 
 
 This command will generate the kernel .config script 
