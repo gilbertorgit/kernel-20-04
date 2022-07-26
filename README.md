@@ -144,19 +144,18 @@ make -j14 deb-pkg LOCALVERSION=-uksm
 
 # You should see something like that 
 
-root@ubuntu:~/kernel-4-9-40-source/linux-4.9.40# ls -la ../*.deb
--rw-r--r-- 1 root root    957376 Mar 20 11:07 ../linux-firmware-image-4.9.40-uksm_4.9.40-uksm-1_amd64.deb
--rw-r--r-- 1 root root  10546258 Mar 20 11:08 ../linux-headers-4.9.40-uksm_4.9.40-uksm-1_amd64.deb
--rw-r--r-- 1 root root  46015482 Mar 20 11:09 ../linux-image-4.9.40-uksm_4.9.40-uksm-1_amd64.deb
--rw-r--r-- 1 root root 479960848 Mar 20 11:29 ../linux-image-4.9.40-uksm-dbg_4.9.40-uksm-1_amd64.deb
--rw-r--r-- 1 root root    870920 Mar 20 11:08 ../linux-libc-dev_4.9.40-uksm-1_amd64.deb
+root@jerry:~/kernel-5-17-8-source/linux-5.17.8# ls -la ../*.deb
+-rw-r--r-- 1 root root    8585016 Jul 26 15:28 ../linux-headers-5.17.8-uksm_5.17.8-uksm-1_amd64.deb
+-rw-r--r-- 1 root root   80781276 Jul 26 15:28 ../linux-image-5.17.8-uksm_5.17.8-uksm-1_amd64.deb
+-rw-r--r-- 1 root root 1084619156 Jul 26 15:31 ../linux-image-5.17.8-uksm-dbg_5.17.8-uksm-1_amd64.deb
+-rw-r--r-- 1 root root    1232360 Jul 26 15:28 ../linux-libc-dev_5.17.8-uksm-1_amd64.deb
 ```
 
 Install the new kernel, update your grub and reboot your system
 ```
-dpkg -i ../linux-headers-4.20.17-uksm_4.20.17-uksm-1_amd64.deb
-dpkg -i ../linux-image-4.20.17-uksm_4.20.17-uksm-1_amd64.deb 
-dpkg -i ../linux-libc-dev_4.20.17-uksm-1_amd64.deb 
+dpkg -i ../linux-headers-5.17.8-uksm_5.17.8-uksm-1_amd64.deb
+dpkg -i ../linux-image-5.17.8-uksm_5.17.8-uksm-1_amd64.deb
+dpkg -i ../linux-libc-dev_5.17.8-uksm-1_amd64.deb
 
 sudo update-grub
 
